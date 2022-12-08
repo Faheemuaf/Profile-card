@@ -28,12 +28,14 @@
             </div>
         </div>
     </div>
+    <script>
     var colors = ["red", "blue", "green", "yellow"],   
     index = 0;                                     
     
    document.getElementById("colorify").onclick = function() {
    document.body.style.background-color = colors[index]; 
-   index = (index + 1) % colors.length;           
+   index = (index + 1) % colors.length;  
+    </script>
 }
 </body>
 
