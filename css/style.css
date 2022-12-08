@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-        background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189));
+        background-color: tomato;
 }
 
 h3 {
