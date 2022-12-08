@@ -33,7 +33,7 @@
     var colors = ["red", "skyblue", "green", "yellow"],   
     index = 0;                                     
     
-   document.getElementByClass("container").onclick = function() {
+   document.getElementById("colorify").onclick = function() {
    $("body").css("background-color", colors[index]); 
    index = (index + 1) % colors.length;  
    }
