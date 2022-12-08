@@ -14,6 +14,7 @@ p {
 .container {
    width: 100%;
    height: 100vh;
+   background-color: Tomato;
    /*background-image: url(../images/background.jpg);*/
    background-size: cover;
    background-position: center;
