@@ -13,7 +13,7 @@
         <div class="profile-box">
             <img src="./images/menu.png" alt="menu icon here" class="menu-icon"/>
             <img src="./images/faheem0.png" alt="profile pics here" class="profile-pics"/>
-            <img src="./images/setting.png" alt="setting icon here" class="setting-icon"/> 
+            <button id="colorify"><img src="./images/setting.png" alt="setting icon here" class="setting-icon"/></button>
             <h3>Faheem Shahzad</h3>
             <p>Frontend HTML Developer, SEO Expert.</p>
             <div class="social-media">
@@ -28,6 +28,13 @@
             </div>
         </div>
     </div>
+    var colors = ["red", "blue", "green", "yellow"],   // the color choices
+    index = 0;                                     // index of the current color
+    
+   document.getElementById("colorify").onclick = function() {
+   document.body.style.background = colors[index];  // set the color of body to the current color
+   index = (index + 1) % colors.length;             // increment index to point to the next color (if it goes beyond the length of the coices array get it back to 0 using the modulo %)
+}
 </body>
 
 </html>
